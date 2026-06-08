@@ -67,7 +67,7 @@ Four tabs:
 
 ## Why This Matters
 
-MTDR is a pure-play Delaware Basin operator - 99% of reserves in the Wolfcamp and Bone Spring plays. The model shows the stock was trading at a ~39% discount to NAV at the buyback reference price (~$41), largely because SEC pricing used a 14% lower oil price deck than the forward strip, compressing the reported PV-10.
+MTDR is a pure-play Delaware Basin operator - 99% of reserves in the Wolfcamp and Bone Spring plays. The model shows the stock was trading at a (~39%) discount to NAV at the buyback reference price (~$41), largely because SEC pricing used a 14% lower oil price deck than the forward strip, compressing the reported PV-10.
 
 The midstream contribution (~$2.45B from San Mateo) is often underappreciated in simple reserve-based valuations - this model isolates it explicitly.
 
