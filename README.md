@@ -1,4 +1,4 @@
-# Matador Resources (MTDR) — Upstream NAV Model
+# Matador Resources (MTDR) - Upstream NAV Model
 
 **Built by Tarun Joshi | FY2025 10-K Data | Filed Feb 26, 2026**
 
@@ -15,19 +15,19 @@ This is the same framework used by oil & gas investment banks and A&D advisory t
 ## Model Structure
 
 ### Python Engine (`nav_model.py`)
-- **Arps Hyperbolic Decline Curves** — calibrated to Delaware Basin Wolfcamp/Bone Spring parameters (Di = 40%, b = 1.30, Dmin = 6%)
-- **Annual Cashflow Engine** — 20-year projection, mid-year discounting convention
-- **PDP NAV** — NPV of proved developed producing reserves at base case pricing
-- **PUD NAV** — NPV of proved undeveloped reserves net of $3.8B development capex phased over 5 years
-- **Midstream NAV** — San Mateo 51% stake valued at 8.0x EV/EBITDA
-- **Sensitivity Tables** — 7 oil prices × 4 discount rates for both equity NAV/share and total asset NAV
+- **Arps Hyperbolic Decline Curves** - calibrated to Delaware Basin Wolfcamp/Bone Spring parameters (Di = 40%, b = 1.30, Dmin = 6%)
+- **Annual Cashflow Engine** - 20-year projection, mid-year discounting convention
+- **PDP NAV** - NPV of proved developed producing reserves at base case pricing
+- **PUD NAV** - NPV of proved undeveloped reserves net of $3.8B development capex phased over 5 years
+- **Midstream NAV** - San Mateo 51% stake valued at 8.0x EV/EBITDA
+- **Sensitivity Tables** - 7 oil prices × 4 discount rates for both equity NAV/share and total asset NAV
 
 ### Excel Deliverable (`MTDR_NAV_Model_TarunJoshi.xlsx`)
 Four tabs:
-- **Summary** — NAV bridge + key metrics, all inputs sourced to 10-K
-- **Decline Curves & CF** — Year-by-year PDP and PUD cashflow tables
-- **Sensitivity** — NAV/share matrix + premium/discount to current price
-- **Assumptions** — Every hardcoded input sourced with filing reference
+- **Summary** - NAV bridge + key metrics, all inputs sourced to 10-K
+- **Decline Curves & CF** - Year-by-year PDP and PUD cashflow tables
+- **Sensitivity** - NAV/share matrix + premium/discount to current price
+- **Assumptions** - Every hardcoded input sourced with filing reference
 
 ---
 
@@ -67,9 +67,9 @@ Four tabs:
 
 ## Why This Matters
 
-MTDR is a pure-play Delaware Basin operator — 99% of reserves in the Wolfcamp and Bone Spring plays. The model shows the stock was trading at a ~39% discount to NAV at the buyback reference price (~$41), largely because SEC pricing used a 14% lower oil price deck than the forward strip, compressing the reported PV-10.
+MTDR is a pure-play Delaware Basin operator - 99% of reserves in the Wolfcamp and Bone Spring plays. The model shows the stock was trading at a ~39% discount to NAV at the buyback reference price (~$41), largely because SEC pricing used a 14% lower oil price deck than the forward strip, compressing the reported PV-10.
 
-The midstream contribution (~$2.45B from San Mateo) is often underappreciated in simple reserve-based valuations — this model isolates it explicitly.
+The midstream contribution (~$2.45B from San Mateo) is often underappreciated in simple reserve-based valuations - this model isolates it explicitly.
 
 ---
 
@@ -86,8 +86,8 @@ Outputs: `MTDR_NAV_Model_TarunJoshi.xlsx`
 
 ## Related Work
 
-[PR / APA Deal Teardown](https://github.com/tarunjoshi03/pr-apa-deal-teardown) — Permian Resources acquisition of APA's Northern Delaware Basin assets: decline curve fitting through IRR sensitivity, all costs from 10-K filings.
+[PR / APA Deal Teardown](https://github.com/tarunjoshi03/pr-apa-deal-teardown) - Permian Resources acquisition of APA's Northern Delaware Basin assets: decline curve fitting through IRR sensitivity, all costs from 10-K filings.
 
 ---
 
-*All data sourced from public SEC filings. This model is for educational and portfolio purposes only — not investment advice.*
+*All data sourced from public SEC filings. This model is for educational and portfolio purposes only - not investment advice.*
