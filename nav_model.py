@@ -1,5 +1,5 @@
 """
-Matador Resources (MTDR) — Upstream NAV Model
+Matador Resources (MTDR) - Upstream NAV Model
 FY2025 10-K Data | Built by Tarun Joshi
 """
 
@@ -26,15 +26,15 @@ GAS_FRAC   = 0.42   # Gas as % of BOE production (using 6:1 conversion)
 OIL_PRICE_BASE = 65.0   # $/Bbl base case (near realized $64.99)
 GAS_PRICE_BASE = 2.25   # $/Mcf base case (near realized $2.08, slight fwd premium)
 
-# Unit costs ($/BOE) — Source: MTDR 10-K FY2025, Operating Summary
+# Unit costs ($/BOE) - Source: MTDR 10-K FY2025, Operating Summary
 LOE        = 5.50
 TRANSPORT  = 0.88
 PROD_TAX   = 3.65   # ~5.6% of revenue at base prices, consistent with 10-K
 GA         = 1.81
 
-# Decline curve parameters — Arps hyperbolic, calibrated to MTDR Delaware Basin
+# Decline curve parameters - Arps hyperbolic, calibrated to MTDR Delaware Basin
 # Di = initial decline rate (annual), b = hyperbolic exponent, Dmin = terminal decline
-PDP_DI   = 0.40   # 40% initial annual decline — typical Wolfcamp/Bone Spring
+PDP_DI   = 0.40   # 40% initial annual decline - typical Wolfcamp/Bone Spring
 PDP_B    = 1.30   # hyperbolic b-factor
 PDP_DMIN = 0.06   # terminal decline 6%/yr
 
@@ -57,7 +57,7 @@ SHARES_OUT  = 124.25 # million shares
 
 # Midstream — San Mateo (51% owned by MTDR)
 SAN_MATEO_EBITDA  = 0.60   # $B estimated (fee-based midstream, growing)
-MIDSTREAM_MULTIPLE = 8.0   # EV/EBITDA — conservative for private midstream JV
+MIDSTREAM_MULTIPLE = 8.0   # EV/EBITDA - conservative for private midstream JV
 MTDR_MIDSTREAM_PCT = 0.51  # MTDR ownership
 
 # Projection horizon
@@ -134,7 +134,7 @@ def npv_cashflows(production_profile, oil_price, gas_price, disc_rate,
     return npv, annual_cf, cum_prod
 
 # ─────────────────────────────────────────────
-# 3. RUN MODEL — BASE CASE
+# 3. RUN MODEL - BASE CASE
 # ─────────────────────────────────────────────
 
 # PDP: qi derived from current reserves over expected production life
@@ -455,7 +455,7 @@ for i, (label, val, note) in enumerate(metrics):
 # Sheet 2 starts next
 
 # ═══════════════════════════════════════════════════════
-# SHEET 2 — DECLINE CURVES & CASHFLOWS
+# SHEET 2 - DECLINE CURVES & CASHFLOWS
 # ═══════════════════════════════════════════════════════
 ws_dc = wb.create_sheet("Decline Curves & CF")
 ws_dc.sheet_view.showGridLines = False
@@ -629,7 +629,7 @@ for i, row_data in enumerate(params):
         c.border = thin_border()
 
 # ═══════════════════════════════════════════════════════
-# SHEET 3 — SENSITIVITY
+# SHEET 3 - SENSITIVITY
 # ═══════════════════════════════════════════════════════
 ws_sens = wb.create_sheet("Sensitivity")
 ws_sens.sheet_view.showGridLines = False
@@ -797,7 +797,7 @@ for i, op in enumerate(OIL_PRICES):
         dc.border = thin_border()
 
 # ═══════════════════════════════════════════════════════
-# SHEET 4 — ASSUMPTIONS
+# SHEET 4 - ASSUMPTIONS
 # ═══════════════════════════════════════════════════════
 ws_assum = wb.create_sheet("Assumptions")
 ws_assum.sheet_view.showGridLines = False
@@ -927,7 +927,7 @@ for section_title, items in assume_sections:
     current_row += 1  # spacer between sections
 
 # ─────────────────────────────────────────────
-# FINALIZE — set tab colors and save
+# FINALIZE - set tab colors and save
 # ─────────────────────────────────────────────
 ws_cov.sheet_properties.tabColor   = C_NAVY
 ws_dc.sheet_properties.tabColor    = C_BLUE
