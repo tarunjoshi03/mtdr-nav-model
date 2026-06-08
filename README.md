@@ -8,7 +8,7 @@
 
 A full upstream Net Asset Value (NAV) model for Matador Resources (NYSE: MTDR), built from scratch using public SEC filings. Covers the full NAV bridge from proved reserves to equity value per share, with oil price and discount rate sensitivity.
 
-This is the same framework used by oil & gas investment banks and A&D advisory teams to value upstream E&P companies — PDP cashflows, PUD development economics, midstream asset valuation, and cap structure bridge to equity NAV.
+This is the same framework used by oil & gas investment banks and A&D advisory teams to value upstream E&P companies - PDP cashflows, PUD development economics, midstream asset valuation, and cap structure bridge to equity NAV.
 
 ---
 
@@ -67,9 +67,9 @@ Four tabs:
 
 ## Why This Matters
 
-MTDR is a pure-play Delaware Basin operator - 99% of reserves in the Wolfcamp and Bone Spring plays. The model shows the stock was trading at a (~39%) discount to NAV at the buyback reference price (~$41), largely because SEC pricing used a 14% lower oil price deck than the forward strip, compressing the reported PV-10.
+MTDR is a pure-play Delaware Basin operator - 99% of reserves in the Wolfcamp and Bone Spring plays. The model shows the stock was trading at a 39% discount to NAV at the buyback reference price (approx. $41), largely because SEC pricing used a 14% lower oil price deck than the forward strip, compressing the reported PV-10.
 
-The midstream contribution (~$2.45B from San Mateo) is often underappreciated in simple reserve-based valuations - this model isolates it explicitly.
+The midstream contribution (approx. $2.45B from San Mateo) is often underappreciated in simple reserve-based valuations - this model isolates it explicitly.
 
 ---
 
